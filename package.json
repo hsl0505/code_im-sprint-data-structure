@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "Codestates Immersive Course Sprint",
   "scripts": {
-    "test": "jest",
-    "run-submit": "node .airci/submit.js",
-    "submit": "npm-run-all -c -s --silent test run-submit",
+    "test": "jest --json --outputFile=results.json",
     "test:part-one": "jest part-one/",
     "test:part-two": "jest part-two/",
-    "test:circleci": "node __test__/getReview.js && jest --json --outputFile=.circleci/results.json",
+    "check": "node .airci/submit.js",
+    "pre-test": "node __test__/preTest.js",
+    "submit": "npm-run-all -s --silent pre-test check",
     "precommit": "lint-staged",
     "lint": "eslint part-one/src part-two/src"
   },
