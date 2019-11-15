@@ -3,14 +3,19 @@ const Stack = function () {
 
   // Use an object with numeric keys to store values
   const storage = {};
-  let count = 0;
+  var count = 0;
 
   // Implement the methods below
   someInstance.push = function (value) {
     count++;
+    storage[count] = value;
   };
 
-  someInstance.pop = function () {};
+  someInstance.pop = function () {
+    delete storage[count]
+    count--;
+    return storage[count]
+  };
 
   someInstance.size = function () {
     return count;

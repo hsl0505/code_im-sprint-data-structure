@@ -2,16 +2,21 @@ const Queue = function () {
   const someInstance = {};
 
   // Use an object with numeric keys to store values
-  const storage = {};
+
 
   // Implement the methods below
 
-  someInstance.enqueue = function (value) {};
+  // eslint-disable-next-line no-unused-vars
+  someInstance.enqueue = function (value) {
+    
+  };
 
   someInstance.dequeue = function () {};
 
-  someInstance.size = function () {};
-
+  someInstance.size = function () {
+    
+  };
+  
   return someInstance;
 };
 
