@@ -14,24 +14,28 @@ runner(
 
 // Test for Functional-shared style
 
+/*
 runner(
    "functional-shared",
    require("../src/functional-shared/stack"),
    require("../src/functional-shared/queue")
 );
+*/
 
 // Test for Prototypal style
 
-// runner(
-//   "prototypal",
-//   require("../src/prototypal/stack"),
-//   require("../src/prototypal/queue")
-// );
-
+/*
+runner(
+   "prototypal",
+   require("../src/prototypal/stack"),
+   require("../src/prototypal/queue")
+ );
+*/
 // Test for pseudoclassical style
 
-// runner(
-//   "pseudoclassical",
-//   require("../src/pseudoclassical/stack"),
-//   require("../src/pseudoclassical/queue")
-// );
+ runner(
+   "pseudoclassical",
+   require("../src/pseudoclassical/stack"),
+   require("../src/pseudoclassical/queue")
+ );
+//no
