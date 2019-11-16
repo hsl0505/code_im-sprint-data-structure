@@ -5,6 +5,7 @@ const Stack = function () {
 
   // Use an object with numeric keys to store values
   // 숫자 키가 있는 객체를 사용하여 값 저장
+  
   someInstance.storage = {};
   someInstance.count = 0;
   
