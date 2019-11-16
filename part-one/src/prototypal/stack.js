@@ -57,3 +57,4 @@ stackMethods.size = function () {
   return this.count;
 };
 //바뀌어라 스택스택
+//바뀌어라 스택스택2222
