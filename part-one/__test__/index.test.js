@@ -4,20 +4,21 @@ const runner = require("./testRunner");
 // If you need to run a test, comment out the code block
 
 // Test for functional style
-
+/*
 runner(
   "functional",
   require("../src/functional/stack"),
   require("../src/functional/queue")
 );
+*/
 
 // Test for Functional-shared style
 
-// runner(
-//   "functional-shared",
-//   require("../src/functional-shared/stack"),
-//   require("../src/functional-shared/queue")
-// );
+runner(
+   "functional-shared",
+   require("../src/functional-shared/stack"),
+   require("../src/functional-shared/queue")
+);
 
 // Test for Prototypal style
 
