@@ -56,3 +56,4 @@ stackMethods.size = function () {
   //Return the number of items on the stack
   return this.count;
 };
+//바뀌어라 스택스택
