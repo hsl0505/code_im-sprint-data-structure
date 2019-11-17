@@ -11,8 +11,8 @@ const Stack = function () {
   someInstance.storage = {};
   someInstance.count = 0;
   */
+ 
   extend(someInstance, stackMethods);
-
   return someInstance;
 };
 
