@@ -20,7 +20,7 @@ Stack.prototype.pop = function () {
   delete this.storage[this.count];
   this.count--;
   return popTarget;
-}
+};
 
 Stack.prototype.size = function () {
   //Return the number of items on the stack
