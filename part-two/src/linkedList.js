@@ -73,6 +73,10 @@ const Node = function(value) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+   addTotail : O(1) // 리스트 맨 앞에 추가하는 경우도 동일, 중간에 넣는 경우는 넣으려는 위치 노드를 보통 미리 알고 direct로 접근이 가능, 그 '다음'에 넣는 경우에는 O(1)
+   // 그 '전에' 넣으려면, 단일 연결 리스트의 경우에는 탐색이 필요하므로 O(N), 이때 이중연결일 경우에는 이전 노드도 접근이 되므로 O(1)
+   removeHead : O(1) // 리스트 맨 뒤 제거도 동일, 중간에 제거는 탐색이 필요해서 O(N) / 이중연결은 이전 노드도 접근이 되므로 O(1)
+   contains : O(N) // lookup, assign 도 동일, 이중연결도 동일
  */
 
 module.exports = LinkedList;
