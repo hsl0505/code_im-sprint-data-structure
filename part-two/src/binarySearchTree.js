@@ -55,14 +55,11 @@ const BinarySearchTree = function(value) {
       var depthTarget = tree;
       
       function recursion(target) { 
-          var callbackTarget = target.value;
-          callback(callbackTarget)
-
-          var targetLeft = target.left;
-          var targetRight = target.right;
-
+          callback(target.value)
+          
+          var targetLeft = target.left.childNode;
           recursion(targetLeft)
-          recursion(targetRight)
+          
       }
 
       recursion(depthTarget)
